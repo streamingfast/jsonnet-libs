@@ -79,14 +79,6 @@
         },
       },
 
-    // A more complete view than the node_exporter
-    node_exporter_full: {
-      grafanaDashboardFolder: 'node_exporter_full',
-      grafanaDashboards+:: {
-        'node-exporter-full.json': (import 'github.com/rfrail3/grafana-dashboards/prometheus/node-exporter-full.json'),
-      },
-    },
-
     grafana:
       (import 'grafana-mixin/mixin.libsonnet'),
   },
